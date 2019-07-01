@@ -8,8 +8,20 @@
 <title>Artist</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="design2.css" />
 </head>
 <body>
+	<p style="font-size: 35px">Murals by Artist</p>
+
+
+	<div class="dropdown">
+		<button class="dropbtn">Sort By</button>
+		<div class="dropdown-content">
+
+			<a href="neighborhood">Neighborhood</a> 
+		</div>
+		<br>
+	</div>
 
 	<form action="addtofavorites">
 		<c:forEach items="${list}" var="l">

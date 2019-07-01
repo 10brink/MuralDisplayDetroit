@@ -5,10 +5,26 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Neighborhood</title>
+
+
+<title>Neighborhoods</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="design2.css" />
 </head>
 <body>
+	<p style="font-size: 35px">Murals By Neighborhood</p>
 
+
+	<div class="dropdown">
+		<button class="dropbtn">Sort By</button>
+		<div class="dropdown-content">
+
+			 <a href="artist">Artist</a>
+		</div>
+		<br>
+	</div>
+	<br>
 	<form action="addtofavorites">
 		<c:forEach items="${list}" var="l">
 			<h2>Neighborhood: ${l.key }</h2>
@@ -22,6 +38,7 @@
 	<br>
 	Add to favorites? <input type="checkbox" class="favorites"
 					name="favorites[]" value="${m.muralid}">
+				<br>
 				<br>
 			</c:forEach>
 		</c:forEach>
